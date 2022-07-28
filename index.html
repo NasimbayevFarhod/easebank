@@ -23,7 +23,7 @@
         </a>
 
         <nav class="site-header__nav">
-          <ul class="site-header__list">
+          <ul class="site-header__list nav-table">
             <li class="site-header__item">
               <a class="site-header__link" href="#">Home</a>
             </li>
@@ -41,41 +41,54 @@
             </li>
           </ul>
         </nav>
-
-        <a class="invite-link" href="#">Request Invite</a>
+        <button class="menu btn-non" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+          <svg width="24" height="11" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+        <a class="invite-link invite-link-close" href="#">Request Invite</a>
 
       </div>
     </div>
   </header>
 
-  <!-- SITE HEADER END -->
-
-
-  <!-- SITE MAIN START -->
   <main class="site-main">
     <section class="site-main__hero hero">
       <div class="container">
-        <div class="hero__info">
-          <h1 class="hero__title">
-            Next generation digital banking
-          </h1>
-          <p class="hero__description">
-            Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
-          </p>
+        <div class="hero__img-box">
+          <img class="hero__phone-img" src="./images/hero-phones-desktop.svg"
+          width="729"
+          height="900"
+          alt="Easybank hero phones">
 
+          <img class="hero__phone-img-second" src="./images/phones-mobileeasybank-hero-tablet-bg.svg"
+          width="968"
+          height="403"
+          alt="Easybank hero phones">
+
+        </div>
+        <div class="hero__info">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              Next generation digital banking
+            </h1>
+            <p class="hero__description">
+              Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+            </p>
+          </div>
           <a class="invite-link" href="#">Request Invite</a>
         </div>
 
-        <img class="hero__phone-img" src="./images/hero-phones-desktop.svg"
-        width="729"
-        height="900"
-        alt="Easybank hero phones">
+
       </div>
     </section>
 
     <section class="second-sectin choose">
       <div class="container">
         <div class="choose__box">
+          <div class="choose__box-inner"></div>
           <h2 class="choose__title">
             Why choose Easybank?
           </h2>
@@ -86,46 +99,54 @@
 
         <ul class="choose__list">
           <li class="choose__item">
+            <div class="choose__box-inner">
             <h3 class="choose__item-title">
               Online Banking
             </h3>
             <p class="choose__item-text">
               Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
             </p>
+            </div>
           </li>
 
           <li class="choose__item">
-            <h3 class="choose__item-title">
-              Simple Budgeting
-            </h3>
-            <p class="choose__item-text">
-              See exactly where your money goes each month. Receive notifications when you're close to hitting your limits.
-            </p>
+            <div class="choose__box-inner">
+              <h3 class="choose__item-title">
+                Simple Budgeting
+              </h3>
+              <p class="choose__item-text">
+                See exactly where your money goes each month. Receive notifications when you're close to hitting your limits.
+              </p>
+            </div>
           </li>
 
           <li class="choose__item">
-            <h3 class="choose__item-title">
-              Fast Onboarding
-            </h3>
-            <p class="choose__item-text">
-              We don't do branches. Open your account in minutes online and start taking control of your finances right away.
-            </p>
-
+            <div class="choose__box-inner">
+              <h3 class="choose__item-title">
+                Fast Onboarding
+              </h3>
+              <p class="choose__item-text">
+                We don't do branches. Open your account in minutes online and start taking control of your finances right away.
+              </p>
+  
+            </div>
           </li>
 
           <li class="choose__item">
-            <h3 class="choose__item-title">
-              Open API
-            </h3>
-            <p class="choose__item-text">
-              Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
-            </p>
+            <div class="choose__box-inner">
+              <h3 class="choose__item-title">
+                Open API
+              </h3>
+              <p class="choose__item-text">
+                Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
+              </p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="thirt-section art">
+    <!-- <section class="thirt-section art">
       <div class="container">
         <h2 class="art__title">
           Latest Articles
@@ -209,13 +230,12 @@
 
       </div>
 
-    </section>
+    </section> -->
   </main>
 
-  <!-- SITE MAIN END -->
 
-  <!-- SITE FOOTER START -->
-  <footer class="site-footer footer">
+
+  <!-- <footer class="site-footer footer">
     <div class="container footer-wrap">
       <div class="footer__logic-box logic-box">
         <a class="logo " href="./index.html">
@@ -287,7 +307,7 @@
         </p>
     </div>
 
-  </footer>
+  </footer> -->
   <!-- SITE FOOTER END -->
 
 
