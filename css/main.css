@@ -936,6 +936,18 @@ body{
   display: flex;
 }
 
+.logic-box__link
+{
+  color: white;
+}
+
+.logic-box__link:hover
+{
+  color: #30C88F;
+}
+
+
+
 @media only screen and (max-width:880px)
 {
 
